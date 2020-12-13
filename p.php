@@ -23,14 +23,14 @@ saloon.address as address
 FROM auto
 LEFT JOIN cars ON auto.id_cars=cars.id
 LEFT JOIN saloon ON auto.id_saloon=saloon.id_show");
-$w = array(10,30,40,);
+$w = array(10,30,40,20);
 $h = 7;
 $pdf->SetFillColor(255,255,255);
 $pdf->Cell($w[0],$h,'п/п','LRTB','0','C',true);
 $pdf->Cell($w[0],$h,'Марка','LRTB','0','C',true);
 $pdf->Cell($w[0],$h,'Модель','LRTB','0','C',true);
-$pdf->Cell($w[0],$h,'Год выпуска','LRTB','0','C',true);
-$pdf->Cell($w[0],$h,'Трансмиссия','LRTB','0','C',true);
+$pdf->Cell($w[3],$h,'Год выпуска','LRTB','0','C',true);
+$pdf->Cell($w[3],$h,'Трансмиссия','LRTB','0','C',true);
 $pdf->Cell($w[1],$h,'Стоимость','LRTB','0','C',true);
 $pdf->Cell($w[1],$h,'Название автосалона','LRTB','0','C',true);
 $pdf->Cell($w[2],$h,'Адрес','LRTB','0','C',true);
@@ -49,8 +49,8 @@ $address = $row['address'];
 $pdf->Cell($w[0],$h,$c,'LRTB','0','C');
 $pdf->Cell($w[0],$h,$marka,'LRTB','0','C',true);
 $pdf->Cell($w[0],$h,$model,'LRTB','0','C',true);
-$pdf->Cell($w[0],$h,$god,'LRTB','0','C',true);
-$pdf->Cell($w[0],$h,$trans,'LRTB','0','C',true);
+$pdf->Cell($w[3],$h,$god,'LRTB','0','C',true);
+$pdf->Cell($w[3],$h,$trans,'LRTB','0','C',true);
 $pdf->Cell($w[1],$h,$cash,'LRTB','0','C',true);
 $pdf->Cell($w[1],$h,$name,'LRTB','0','C',true);
 $pdf->Cell($w[2],$h,$address,'LRTB','0','C',true);

@@ -5,5 +5,5 @@
 		$address=$_POST['address'];
 	mysqli_query($mysql, "UPDATE `saloon` SET `name` = '$name', `address` = '$address' WHERE `saloon`.`id_show` = '$id'");
 	
-			 header('Location: 2app.php');
+			 header('Location: app.php');
 ?>

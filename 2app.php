@@ -35,7 +35,7 @@
 		</table>
 		<br><br>
 		<button onclick="window.location.href ='2dopop.php';"><img src="https://www.clipartmax.com/png/full/65-653367_car-price-icon-leasing.png" width="100" height="100" alt="" style="vertical-align:middle"> 
-    Добавить новую машину</button>
+    Добавить новый салон</button>
 	<br><a style="color: #1fcecb" href=" ind.php">Назад</a>
 		
 </body>

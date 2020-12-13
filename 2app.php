@@ -24,8 +24,8 @@
 					<td><?= $por[0]?></td>
 					<td><?= $por[1]?></td>
 					<td><?= $por[2]?></td>
-					<td><a class="change_column_anchor ajax" href="2obnov.php?id=<?= $por[0]?>"><span class="nowrap"><img src="http://vicentbadia.com/img/contacto-valencia.png" width="20" height="20"></span></a></td>
-					<td><a style="color: red" href="2delet.php?id=<?= $por[0]?>">X</a></td>
+					<td><a class="change_column_anchor ajax" href="2obnov.php?id_show=<?= $por[0]?>"><span class="nowrap"><img src="http://vicentbadia.com/img/contacto-valencia.png" width="20" height="20"></span></a></td>
+					<td><a style="color: red" href="2delet.php?id_show=<?= $por[0]?>">X</a></td>
 		</tr>
 		<?php
 			}

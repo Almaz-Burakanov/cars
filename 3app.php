@@ -17,6 +17,7 @@
 
 			$prod = mysqli_query($mysql,"SELECT
 				auto.id_auto,
+				auto.cash,
 
 				cars.marka as cars_marka,
 				cars.model as cars_model,
@@ -33,6 +34,7 @@
 			
 
 			while ($stud = mysqli_fetch_array($prod)){
+				$auto_cash = $stud['cash'];
 				$auto_id = $stud['id_auto'];
 				$cars_marka = $stud['cars_marka'];
 				$cars_model = $stud['cars_model'];
@@ -43,7 +45,7 @@
 
 				echo "<tr>";
 
-				echo "<td>$auto_id</td> <td>$cars_marka $cars_model</td> <td>$saloon_name</td> <td>$cars_cash</td> ";
+				echo "<td>$auto_id</td> <td>$cars_marka $cars_model</td> <td>$saloon_name</td> <td>$auto_cash</td> ";
 				echo "<td><a class='change_column_anchor ajax' href='3obnov.php?id_auto=$auto_id'><span class='nowrap'><img src='http://vicentbadia.com/img/contacto-valencia.png' width='20' height='20'></span></a></td>";
 				echo "<td><a style='color: red' href='3delet.php?id_auto= $auto_id'>X</a></td>";
 				echo "</tr>";

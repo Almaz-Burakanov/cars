@@ -30,18 +30,8 @@
 				}
 				}
 				echo "</select>";
-			$result = mysqli_query($mysql, "SELECT id, cash FROM cars");
-			echo "<br><br>ID автомобиля:<br><br><select name='cash'>";
-			if ($result){
-				while ($row = $result->fetch_array()){
-				$id = $row['id'];
-				$cash = $row['cash'];
-				
-
-				echo "<option value='$cash '>$cash</option>";
-				}
-				}
-				echo "</select>";
 			?>
-		<br><br><button type="sumbit">Добавить новое расписание</button>
+			<p>Стоимость</p>
+		<input type="text" name="cash">
+		<br><br><button type="sumbit">Выбрать стоимость</button>
 		</form>

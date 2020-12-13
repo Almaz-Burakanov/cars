@@ -22,7 +22,8 @@ saloon.name as name,
 saloon.address as address
 FROM auto
 LEFT JOIN cars ON auto.id_cars=cars.id
-LEFT JOIN saloon ON auto.id_saloon=saloon.id_show");
+LEFT JOIN saloon ON auto.id_saloon=saloon.id_show
+ORDER BY id_auto ASC");
 $w = array(10,30,40,20);
 $h = 7;
 $pdf->SetFillColor(255,255,255);

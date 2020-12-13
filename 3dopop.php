@@ -8,19 +8,19 @@
 		<form action="3dop.php" method="post">
 		<?php
 			$result = mysqli_query($mysql, "SELECT id, model, marka FROM cars");
-			echo "<br><br>ID автомобиля:<br><br><select name='id'>";
+			echo "<br>ID автомобиля:<br><br><select name='id_cars'>";
 			if ($result){
 				while ($row = $result->fetch_array()){
-				$id = $row['id'];
+				$id_cars = $row['id'];
 				$model = $row['model'];
 				$marka = $row['marka'];
 
-				echo "<option value='$id '>$marka $model</option>";
+				echo "<option value='$id_cars'>$marka $model</option>";
 				}
 				}
 				echo "</select>";
 			$result = mysqli_query($mysql, "SELECT id_show, name FROM saloon");
-			echo "<br><br>ID автосалона:<br><br> <select name='id_show'>";
+			echo "<br><br>ID автосалона:<br><br> <select name='id_saloon'>";
 			if ($result){
 				while ($row = $result->fetch_array()){
 				$id_show = $row['id_show'];
@@ -31,7 +31,7 @@
 				}
 				echo "</select>";
 			$result = mysqli_query($mysql, "SELECT id, cash FROM cars");
-			echo "<br><br>ID автомобиля:<br><br><select name='id'>";
+			echo "<br><br>ID автомобиля:<br><br><select name='cash'>";
 			if ($result){
 				while ($row = $result->fetch_array()){
 				$id = $row['id'];

@@ -38,7 +38,7 @@
 				$cash = $row['cash'];
 				
 
-				echo "<option value='$id '>$cash</option>";
+				echo "<option value='$cash '>$cash</option>";
 				}
 				}
 				echo "</select>";

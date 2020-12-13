@@ -44,8 +44,8 @@
 				echo "<tr>";
 
 				echo "<td>$auto_id</td> <td>$cars_marka $cars_model</td> <td>$saloon_name</td> <td>$cars_cash</td> ";
-				echo "<td><a class='change_column_anchor ajax' href='3obnov.php?id_auto=<?= $por[0]?>'><span class='nowrap'><img src='http://vicentbadia.com/img/contacto-valencia.png' width='20' height='20'></span></a></td>";
-				echo "<td><a style='color: red' href='3delet.php?id_show=<?= $por[0]?>'>X</a></td>";
+				echo "<td><a class='change_column_anchor ajax' href='3obnov.php?id_auto=$auto_id'><span class='nowrap'><img src='http://vicentbadia.com/img/contacto-valencia.png' width='20' height='20'></span></a></td>";
+				echo "<td><a style='color: red' href='3delet.php?id_auto= $auto_id'>X</a></td>";
 				echo "</tr>";
 			}
 		?>

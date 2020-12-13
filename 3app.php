@@ -28,7 +28,8 @@
 
 				FROM auto
 				LEFT JOIN cars ON auto.id_cars=cars.id
-				LEFT JOIN saloon ON auto.id_saloon=saloon.id_show"
+				LEFT JOIN saloon ON auto.id_saloon=saloon.id_show
+				ORDER BY id_auto ASC"
 			);
 
 			

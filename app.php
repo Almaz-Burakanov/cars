@@ -44,6 +44,7 @@
 		<br><br>
 		<button onclick="window.location.href ='dopop.php';"><img src="https://img2.pngio.com/red-ford-mustang-png-picture-png-mart-red-mustang-png-1710_1134.png" width="100" height="100" alt="" style="vertical-align:middle"> 
     Добавить новую машину</button>
+	<br><a style="color: #1fcecb" href=" ind.php">Назад</a>
 		
 </body>
 <style>

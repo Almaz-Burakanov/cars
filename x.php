@@ -9,9 +9,9 @@ require_once'connect.php';
         cars.model as model,
 		cars.god as god,
         cars.trans as trans,
+		auto.cash,
         saloon.name as name,
-		saloon.address as address,
-        auto.cash
+		saloon.address as address
 		FROM auto
         LEFT JOIN cars ON auto.id_cars=cars.id
 		LEFT JOIN saloon ON auto.id_saloon=saloon.id_show"

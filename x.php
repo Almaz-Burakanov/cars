@@ -34,7 +34,7 @@ require_once'connect.php';
     $sheet->getStyle('A1')->getFill()->getStartColor()->setRGB('EEEEEE');
 
     // Объединяем ячейки
-    $sheet->mergeCells('A1:G1');
+    $sheet->mergeCells('A1:H1');
 
     // Выравнивание текста
     $sheet->getStyle('A1')->getAlignment()->setHorizontal(

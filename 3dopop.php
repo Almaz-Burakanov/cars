@@ -4,7 +4,7 @@
 ?>
 
 </table>
-		<h3>Добавление нового расписания</h3>
+		<h3>Добавление нового автомобиля в наличии</h3>
 		<form action="3dop.php" method="post">
 		<?php
 			$result = mysqli_query($mysql, "SELECT id, model, marka FROM cars");
